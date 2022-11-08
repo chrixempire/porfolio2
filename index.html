@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <script src="https://kit.fontawesome.com/94decf7bff.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/94decf7bff.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   
+<button id="btn-scroll">
+    <i class="fa-solid fa-up"></i>
+    <i class="bi bi-arrow-up-square-fill" id="scrollup"></i>
+
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="header">
+        <header>
+            <nav class="navbar">
+                <div id="logo">
+                    <h1>Chrix</h1>
+                </div>
+                
+                <div class="dark-mode">
+                    <div id="lights">Light</div>
+                    <i class="fa-solid fa-sun" id="icons"></i>
+                </div>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="nav-menu">
+
+                    <li class="nav-item"><a href="#header" onclick="closeMenu2()" class="nav-link"><span class="span1">00</span>Home</a></li>
+                    <div class="line"></div>
+                    <li class="nav-item"><a href="#about" onclick="closeMenu2()" class="nav-link"><span class="span1">01</span>About</a></li>
+                    <div class="line"></div>
+                    <li class="nav-item"><a href="#services" onclick="closeMenu2()" class="nav-link"><span class="span1">02</span>Services</a></li>
+                    <div class="line"></div>
+                    <li class="nav-item"><a href="#portfolio" onclick="closeMenu2()" class="nav-link"><span class="span1">03</span>Portfolio</a></li>
+                    <div class="line"></div>
+                    <li class="nav-item"><a href="#contact" onclick="closeMenu2()" class="nav-link"><span class="span1">04</span>Contact</a></li>
+       
+                </ul>
+              
+               
+        
+        
+            </nav>
+        
+        
+        
+        
+        </header>
+        <div class="container">
+            <nav class="navigation">
+                <div id="logo">
+                    <h1>Chrix</h1>
+                </div>
+                <ul id="sideMenu">
+                    <li><a href="#header" onclick="closeMenu()">Home</a></li>
+                    <li><a href="#about" onclick="closeMenu()">About</a></li>
+                    <li><a href="#services" onclick="closeMenu()">Services</a></li>
+                    <li><a href="#portfolio" onclick="closeMenu()">Portfolio</a></li>
+                    <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+                    <i class="fa-solid fa-xmark" id="close" onclick="closeMenu()"></i>
+                </ul>
+                <div class="mode">
+                    <p class="light" id="light">Light</p>
+                    <i class="fa-solid fa-sun" id="icon"></i>
+                </div>
+
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+          
+                
+            </nav>
+ 
+            <div class="Name">
+             
+            </div>
+            <div class="header-text">
+            
+                <h1 class="Hello">Hello, </h1>
+                <h1 class="typed">I'm <span class="auto"></span></h1>
+            </div>
+        </div>
+    
+    </div>
+ 
+    <div id="body">
+        <div class="about" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/kingchris2.jpeg"  alt="">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class=" Myname sub-title">About me</h1>
+                        <p class="MeMe">I am an excited and enthusiastic Frontend
+                            Web Developer eager to contribute to
+                            team success through hard work, attention
+                            to details and excellent organizational
+                            skills. Clear understanding of HTML,
+                            CSS, training in Javascript and Vue.js .Motivated to
+                            learn, grow and excel in Web
+                            Development. Dedicated to company
+                            success.
+                        </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="openTab('experience') ">Experience</p>
+                            <p class="tab-links" onclick="openTab('education')">Education</p>
+                        </div>
+                    
+                        <div class="tab-contents active-tab" id="experience">
+                            <ul>
+                                <li><span>March-Oct. 2021</span><br>Responsive Web Design
+                                    Certification at freeCodeCamp,</li>
+                                <li><span>Oct. - Dec. 2021</span><br>JavaScript Algorithms and Data Structures Certification at freeCodeCamp,</li>
+                                <li><span>2022- Current</span><br>Vue.Js @ vue-Mastery</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2018-current</span><br>Electrical/Electronics Eng. at Ondo State university.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title serve-title">My Skill Set</h1>
+                <div class="image7">
+                    <div class="html">
+                        <i class="fa-brands fa-html5 fa-skills"></i>
+                        <div class="layout1">
+                            <h2>HTML</h2>
+                        </div>
+                    </div>
+                    <div class="css">
+                        <i class="fa-brands fa-css3-alt fa-skills"></i>
+                        <div class="layout1">
+                            <h2>CSS</h2>
+                        </div>
+                    </div>
+                    <div class="Javascript">
+                    <i class="fa-brands fa-square-js fa-skills"></i>
+                        <div class="layout1">
+                            <h2>JavaScript</h2>
+                        </div>
+                    </div>
+                    <div class="VueJs">
+                        <i class="fa-brands fa-vuejs fa-skills"></i>
+                        <div class="layout1">
+                            <h2>Vue Js</h2>
+                        </div>
+                    </div>
+                    <div class="git">
+                        <i class="fa-brands fa-git-alt fa-skills"></i>
+                        <div class="layout1">
+                            <h2>Git</h2>
+                        </div>
+                    </div>
+                    <div class="github">  
+                    <i class="fa-brands fa-github"></i>
+                        <div class="layout1">
+                            <h2>Github</h2>
+                        </div>
+                    </div>
+                    
+                    
+                   
+                   
+                </div>
+            </div>
+        </div>
+
+    
+        <div id="portfolio">
+            <div class="container" id="port">
+                <h1 class="sub-title serve-title">My Projects</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/small size.jpg" alt="">
+                        <div class="layout">
+                            <h3>Github User Search WebApp</h3>
+                            <p>A simple Github user search project, Data of users gotten from an api
+                                built with Html, Css and Javascript
+                            </p>
+                            <a href="https://lovely-griffin-f2e54c.netlify.app"  target=”_blank”><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images\mobile-design.jpg" alt="">
+                        <div class="layout">
+                            <h3>A count downtimer</h3>
+                            <p>A simple WebApp of a count down timer built with Html and Css for alluring looks 
+                                javascript for its Functionality
+                            </p>
+                            <a href="https://chris-countdown-timer.netlify.app/"  target=”_blank”><i class="fa-solid fa-link"></i></a>
+                        </div>
+                     
+                    </div>
+                    <div class="work">
+                        <img src="images\desktop-design.jpg" alt="">
+                        <div class="layout">
+                            <h3>A simple Bookmark Manager</h3>
+                            <p>WebApp built to practice dropdown menu from an Hamburger menu icon, using Html, css and Javascript
+                            </p>
+                            <a href="https://bookmarks-landing-page.netlify.app"  target=”_blank”><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-list2">
+                    <div class="work">
+                        <img src="images\Tip-calculator.jpg" alt="">
+                        <div class="layout">
+                            <h3>Tip Tip-calculator</h3>
+                            <p>A web App built to test my knowledge on javascript mathematical operations and functionallity, structured with Html and styled with Css .
+                            </p>
+                            <a href="https://chris-tipcalculator.netlify.app/"  target=”_blank”><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/advice2.jpg" alt="">
+                        <div class="layout">
+                            <h3>Advice Generator</h3>
+                            <p> My first Website built to test my skills on API call which was a very interseting experience
+                            </p>
+                            <a href="https://chris-advice-generator.netlify.app/"  target=”_blank”><i class="fa-solid fa-link"></i></a>
+                        </div>
+                     
+                    </div>
+                    <div class="work">
+                        <img src="images/space1.jpg" alt="">
+                        <div class="layout">
+                            <h3>Space</h3>
+                            <p>This was one of my Favourite project which had several tabs in them, its functionality were fully built with Javacript
+                            </p>
+                            <a href="https://travel-2-space.netlify.app "  target=”_blank”><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="work-list2">
+                    <!-- <h1 class="vueproject">Vue.js Projects</h1> -->
+                    <div class="work">
+                        <img src="images\vue-calculator.png" alt="">
+                        <div class="layout">
+                            <h3>calculator built with Vue.js</h3>
+                            <p>A Calculator App built with Vue.js
+                            </p>
+                            <a href="https://vuejs-calc-app.netlify.app/"  target=”_blank”><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images\weather-app2.png" alt="">
+                        <div class="layout">
+                            <h3>Weather App</h3>
+                            <p> Weather App built with Vue.js, CSS3 and Open weather Api
+                            </p>
+                            <a href="https://vuejs-weather-application.netlify.app/"  target=”_blank”><i class="fa-solid fa-link"></i></a>
+                        </div>
+                     
+                    </div>
+                    <div class="work">
+                        <img src="images\todolist3.png" alt="">
+                        <div class="layout">
+                            <h3>A simple Todolist</h3>
+                            <p>A very Simple todolist having the features to delete, update the list and check box the list 
+                            </p>
+                            <a href="https://vue-simple-todo-list-app.netlify.app/"  target=”_blank”><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+               
+            </div>
+            <a href="#port" class="btn subbtn">See More</a>
+        </div>
+        
+        <div id="contact">
+            <div class="container">
+                <div class="row2">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p> <i class="fa-solid fa-paper-plane"></i>
+                            <a href="mailto:anyikamaduchris@gmailcom">anyikamaduchris@gmail.com</a>
+                        </p>
+                        <p><i class="fa-solid fa-phone"></i> <a href="tel: 08152512716">08152512716</a></p>
+                        <div class="social-icons">
+                            
+                            <a href="https://twitter.com/Chrixempire?t=JhrO2jrWmIteO9koY-c_AQ&s=08" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
+                            <a href="https://www.linkedin.com/in/anyikamadu-christian-b3997820a" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://www.facebook.com/chris.diamond.944" target="_blank"><i class="bi bi-facebook"></i><a></a>
+                        </div>
+                        <a href="christian-resume.pdf"  download class="btn btn2 cvbtn">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="8" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2 subbtn"> Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+         
+        </div>
+  
+    </div>
+    <div class="copy-right">
+        <p>Copyright © Chris. Made with <i class="fa-solid fa-heart"></i>  Easy Tutorial</p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="App.js"></script>
+    <script>
+        var typed = new Typed(".auto",{
+            strings: ["Christian Anyikamadu from Nigeria.", "a frontend WebDeveloper."],
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop: true
+        })
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxOYO6Ifacj5fqSzKChNsJmVjjji9_m-Fmb-EXeU1Uhr2il7L-HGoYlHvZWTjOrHxLx/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg')
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => {
+                msg.innerHTML = "Message sent Failed"
+                msg.style.color = 'red'
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+            })
+        })
+      </script>
+</body>
+</html>

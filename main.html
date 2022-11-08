@@ -1,0 +1,295 @@
+<header>
+    <nav class="navbar">
+        <div id="logo">
+            <h1>Chrix</h1>
+        </div>
+        <!-- <div class="mode">
+            <p class="light" id="light">Light</p>
+            <i class="fa-solid fa-sun" id="icon"></i>
+        </div> -->
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Portfolio</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+        </ul>
+      
+       
+
+
+    </nav>
+
+
+
+
+</header>
+
+<!-- const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('.nav-menu');
+
+hamburger.addEventListener('click', ()=>{
+    hamburger.classList.toggle('active');
+    navMenu.classList.toggle('active');
+}) -->
+
+/* .hamburger{
+    display: none;
+    cursor: pointer;
+}
+.bar{
+    display: block;
+    width: 75px;
+    height: 9px;
+    margin: 15px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+    border-radius: 2px;
+    z-index: 999;
+
+}
+.navbar{
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+
+}
+.header-text{
+    display: block;
+    
+  
+    
+}
+.header-text h1{
+    font-size: 500px;
+} */
+
+/* .hamburger{
+    display: block;
+}
+.hamburger.active .bar:nth-child(2){
+    opacity: 0;
+}
+.hamburger.active .bar:nth-child(1){
+    transform: translateY(3px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(3){
+    transform: translateY(-45px) rotate(-45deg);
+}
+.nav-menu{
+    position: fixed;
+    right: -100%;
+    top: 150px;
+    gap: 0;
+    flex-direction: column;
+    background-color:rgb(31, 31, 33);
+    width: 50%;
+    text-align: left;
+    padding-left: 30px;
+    transition: 0.5s ease-in-out;
+  
+}
+.nav-item{
+    margin: 30px 0;
+}
+.nav-menu.active{
+    right: 0;
+}
+.nav-link{
+    font-size: 40px;
+
+} */
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    #header{
+         background-image: url(images/trialanderror.jpg); 
+        background-size: cover;
+        background-position: center;
+    }   
+    .about-col-1 img{
+        width: 330px;
+    }
+    .header-text {
+        margin-top: 35%;
+        font-size: 50px;
+        padding-top:20px;
+        font-family: 'Barlow Condensed', sans-serif;
+    
+    }
+    .header-text h1{
+        font-size: 50px;
+        font-family: 'Barlow Condensed', sans-serif;
+    }
+
+
+    .btn{
+        display: block;
+        margin: 50px auto;
+        width: fit-content;
+        border: 1px solid var(--spancl);
+        text-decoration: none;
+        padding: 14px 50px;
+        border-radius: 6px;
+        font-size: 25px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color:var(--spancl3) ;
+        transition: background 0.5s;
+    }
+    .btn:hover{
+        background: var(--spancl);
+        color:black;
+        
+    }
+    
+    .contact-left{
+        flex-basis: 35%;
+    }
+    .contact-left p{
+        margin-top: 30px;
+        font-size: 18px;
+    }
+    .contact-left p i{
+        color: var(--spancl);
+        margin-right: 15px;
+        font-size: 27px;
+    }
+    .contact-right{
+        flex-basis: 60%;
+    }
+    .social-icons{
+        margin-top: 30px;
+    }
+    .social-icons a {
+        text-decoration:none;
+        font-size: 30px;
+        /* display:none; */
+        margin-right:15px ;
+        color:var(--abtcl) ;
+        transition: transform 0.5s;
+    }
+    .social-icons a:hover{
+        color: var(--spancl);
+        transform: translateY(-5px);
+    }
+    .btn.btn2{
+        display: block;
+        
+    }
+    .contact-right form{
+        width: 100%;
+    }
+    form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    form .btn2{
+        padding: 14px 30px;
+        font-size: 20px;
+        margin-top: 20px;
+        cursor: pointer;
+        background-color: transparent;
+    }
+    #body{
+        padding: 10px 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+    .copy-right{
+        width: 100%;
+        text-align: center;
+        padding: 0px;
+        background: var(--divbackgrd);
+        font-weight: 300;
+        margin-top: 20px;
+    
+    }
+
+    .contact-left h1{
+        font-size: 40px;
+    }
+    .copy-right p{
+        font-size: 15px;
+    }
+    .row2{
+        display: block;
+     
+    }
+    #msg{
+        color: #61b752;
+        margin-top: -50px;
+        display: block;
+    }
+    form input, form textarea{
+        width: 100%;
+        border: 0;
+        outline: none;
+        background-color: var(--divbackgrd);
+        color:var(--txtcolor) ;
+        margin: 15px 0;
+        font-size: 20px;
+        border-radius: 6px;
+     
+    }
+    form .btn2{
+        padding: 14px 30px;
+        font-size: 20px;
+        margin-top: 20px;
+        cursor: pointer;
+        background-color: transparent;
+    }
+    
+    .copy-right{
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+        background: var(--divbackgrd);
+        font-weight: 300;
+        margin-top: 20px;
+        
+    }
+    .copy-right{
+        width: 100%;
+        text-align: center;
+        padding:25px 0px;
+        background: var(--divbackgrd);
+        font-weight: 300;
+        margin-top: 20px;
+    
+    }
+    .copy-right p{
+        font-size: 15px;
+    
+    }
+    .contact-left h1{
+        font-size: 40px;
+    }
+    .row2{
+        display: block;
+     
+    }
+    
+    
+    
+    
+    
+
+}
